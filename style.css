@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+header nav {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+header nav a {
+  color: #fd1d1d;
+  text-decoration: none;
+  margin: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.container {
+  margin: 2rem 0.4rem;
+}
+.container h2 {
+  margin: inherit;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  background: linear-gradient(to right, #7c3ffb, #fc466b);
+}
+
+/* making two shadows in css whether its box shadow or text shadow 
+   is by putting comma (,) after the first values then putting our second value
+   etc etc etc...... 
+ */
+
+.container h4 {
+  margin: 0.5rem 0.4rem;
+  text-transform: capitalize;
+  color: #1e1c38;
+  text-shadow: 0.35rem 0.35rem 0.15rem #7c3ffb, 0.2rem 0.2rem 0.1rem #fc466b;
+}
+
+/*  Difference between oblique and italic
+     Oblique is a roman font that has been skewed between (8-12)degrees
+     Italic is created by designer with specific characters drawn differently as well as slanted version
+     as a summery both of them are slanted but oblique is regular version while italic will have special letter-forms made especially for it
+     */
+
+.container p {
+  width: 60%;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-style: oblique;
+}
+
+.container p::first-letter {
+  font-size: 1.5rem;
+}
+
+.italic {
+  width: 60%;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-style: italic;
+}
+
+ul {
+  margin: 2rem;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* text wrapping its standard value is warp its wrapping it depending on the width if u choose no wrap it will make
+   the text to be written on one line and it will overflow its containing element (out from its box and decoration)
+   balance which will make all the lines equal to each other as much as possible (balancing the number of characters in each line)
+   pretty same as wrap but the user agent will use slower algorithm to give better layout over speed
+*/
+
+.shadow {
+  margin: 4rem;
+  box-shadow: 0 0 0 0.6rem #7c3ffb, 0 0 0 1.2rem #fc466b, 0 0 0 1.8rem #be65c3,
+    0 0 0 2.4rem #65c3ad;
+  text-wrap: balance;
+}
